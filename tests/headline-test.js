@@ -1,7 +1,7 @@
 function testHeadlineReturnsAHeadline(){
-  var headline = new Headline("Hong Kong leader suspends extradition bill amid protest pressure");
+  var headline1 = new Headline("Hong Kong leader suspends extradition bill amid protest pressure");
 
-  assert.isTrue(headline.news() === "Hong Kong leader suspends extradition bill amid protest pressure")
+  assert.isTrue(headline1.getHeadline() === "Hong Kong leader suspends extradition bill amid protest pressure")
 };
 
 testHeadlineReturnsAHeadline()

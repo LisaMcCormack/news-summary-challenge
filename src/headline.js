@@ -1,12 +1,12 @@
 (function(exports) {
 
-  function Headline(news) {
-    this._news = news
+  function Headline(headline) {
+    this._headline = headline;
   };
 
-  Headline.prototype.news = function() {
-    return this._news;
+  Headline.prototype.getHeadline = function() {
+    return this._headline;
   };
-  
+
   exports.Headline = Headline;
 })(this);
