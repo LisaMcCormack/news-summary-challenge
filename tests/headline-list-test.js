@@ -5,4 +5,14 @@ function testHeadlineListreturnsAHeadlineObject(){
   assert.isTrue(headlineList.list().length === 1 )
 };
 
-testHeadlineListreturnsAHeadlineObject()
+testHeadlineListreturnsAHeadlineObject();
+
+function testHeadlineCanBeCreated(){
+  var headlineList = new HeadlineList()
+  var headline = new Headline("Thousands of Syrian refugees could be sent back, says Lebanese minister")
+  headlineList.createHeadline(headline)
+  headlineList.addToList(headline);
+  assert.isTrue(headlineList.list().length === 1 )
+};
+
+testHeadlineCanBeCreated()
