@@ -3,8 +3,8 @@
     this.headlineListView = new HeadlineListView(headlineList);
   };
 
-  HeadlineController.prototype.displayHeadlines = function(list) {
-    var html = this.headlineListView.htmlString(list);
+  HeadlineController.prototype.displayHeadlines = function() {
+    var html = this.headlineListView.htmlString();
 
     return html;
   }
