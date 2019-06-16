@@ -4,12 +4,9 @@
 
   };
   HeadlineList.prototype.createHeadline = function(headline) {
-    return new Headline(headline);
+    this._headlines.push(new Headline(headline))
   };
 
-  HeadlineList.prototype.addToList = function(news) {
-    this._headlines.push(news)
-  };
 
   HeadlineList.prototype.list = function() {
     return this._headlines;
